@@ -17,7 +17,7 @@ if __name__ == "__main__":
                         required=True, type=str)
     parser.add_argument("--account", dest="account",
                         help="AWS account for discovery",
-                        required=True, type=str)
+                        required=False, type=str,default=None)
     parser.add_argument("--config", dest="config",
                         help="Optional path to config file",
                         required=False, type=str)

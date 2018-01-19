@@ -5,5 +5,5 @@ if [ $# -gt 3 ]
     then
         ./aws_discovery.py --service $1 --region $2 --account $3 --args ${@:4}
     else
-        ./aws_discovery.py --service $1 --region $2 --account $3
+        ./aws_discovery.py --service $1 --region $2  #2>&1 | tee -a  /tmp/error.log
 fi
