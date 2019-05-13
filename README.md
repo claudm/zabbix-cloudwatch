@@ -4,7 +4,7 @@ Cloudwatch integration for Zabbix 3.x
 Python 2.7.x
 
 1. Create specialized user account in AWS and grant it permissions for required services and API calls (for example `describe_instances()` for EC2)
-2. Clone github repo: https://github.com/wawastein/zabbix-cloudwatch
+2. Clone github repo: https://github.com/claudm/zabbix-cloudwatch
 3. Copy contents of `zabbix-scripts` into `/usr/lib/zabbix` directory, change owner of  the dir and its contents to user under which you run Zabbix
 4. [Install](http://boto3.readthedocs.io/en/latest/guide/quickstart.html) system-wide `boto3` package
 5. Import `cloudwatch_template.xml` into Zabbix
